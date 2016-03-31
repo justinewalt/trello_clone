@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TrelloClone</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper indigo darken-1">
+      <a href="/boards" class="brand-logo">Trello, ello!</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class='trending_flat'><a href="/boards">Home</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li class='trending_flat'><a href="/boards">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+<%= yield %>
+
+</body>
+</html>
